@@ -1,0 +1,62 @@
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100px;
+  position: relative;
+}
+
+/* General styles for all lights */
+.light {
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+  border-radius: 50%;
+  background-color: gray;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Red light */
+.light.red {
+  background-color: #8b0000;
+}
+
+.light.red.on {
+  background-color: #ff0000;
+  box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.8);
+}
+
+/* Yellow light */
+.light.yellow {
+  background-color: #8b8b00;
+}
+
+.light.yellow.on {
+  background-color: #ffff00;
+  box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.8);
+}
+
+/* Green light */
+.light.green {
+  background-color: #006400;
+}
+
+.light.green.on {
+  background-color: #00ff00;
+  box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.8);
+}
+
+/* Countdown timer styles */
+.countdown {
+  margin-top: 10px;
+  font-size: 18px;
+  color:black;
+  font-weight: bold;
+  position: absolute;
+  bottom: -30px;
+}
